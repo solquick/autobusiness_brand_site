@@ -1,0 +1,428 @@
+/* 모든 요소에 border-box 입히기 -> box의 사이즈를 border까지 다 포함한 사이즈로 만듬. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    /* 상하 0, 좌우를 중간에 배치 -> 이는 특정 이상 크기가 되면 모든 요소를 깔끔하게 가운데로 몰기 위해서임. */
+    margin:0 auto;
+    color:#3f464d;
+
+    /* 폰트 사이트에서 쓰라고 한 대로 쓰기 */
+    font-family: "Spoqa Han Sans Neo", "Sans-serif"
+}
+
+a {
+    all: unset;
+}
+
+/* a 태그에 링크가 있을 떄 -> 디폴트값으로 일단 지정해둠. 필요한 것은 그것만 바꿈 */
+a:link {
+    text-decoration: none;
+    color : #3f464d;
+}
+
+a:visited {
+    text-decoration: none;
+    color : #3f464d;
+}
+
+a:active {
+    text-decoration: none;
+    color : #3f464d;
+}
+
+a:hover {
+    text-decoration: none;
+    color : #3f464d;
+}
+
+ /* inner의 것들을 일괄적으로 설정해주는 것임. */
+.inner {
+    width : 100%;
+    height : 100%;
+    margin : 0 auto;
+    padding: 0 2rem; /* 패딩 줘서 간격 좀 벽에서 띄우기 */
+    overflow : hidden;   /* 내용이 넘치면 숨기기 */
+}
+
+header {
+    width:100%;
+    height: 60px;
+    background-color: #ffffff;
+    position : fixed; /* 위치 고정 */
+    top:0;
+    left:0;
+    z-index:1000; /* 최상단에 띄우기 위해서 */
+}
+
+.head-container {
+    width:100%;
+    height:100%;
+    display : flex; /* 수평 */
+    justify-content: space-between; /* 양쪾끝에 정렬 */
+    align-items: center; /* 높이의 가운데정렬 */
+}
+
+.head-container .head-brand{
+    font-weight: bold;
+    font-size : 1.2rem;
+}
+
+/* 특정 부분의 a 태그 올려놓으면 */
+.head-container .head-brand a:hover{
+    color: #2186c4;
+    cursor : pointer;
+}
+
+
+.head-container .head-blog{
+    font-weight: bold;
+    font-size : 1.2rem;
+}
+
+/* 특정 부분의 a 태그 올려놓으면 */
+.head-container .head-blog a:hover{
+    color: #2186c4;
+    cursor : pointer;
+}
+
+
+/* section의 디폴트 설정 해주기 */
+section {
+    width:100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.main {
+    height : 360px;
+    background-image: url('../img/main_img.jpg');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 10%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+.main-container {
+    width:100%;
+    height:100%;
+    background-color: rgb(47,48,89);
+    opacity: 0.8; /* 투명도 */
+    z-index: 2; /* 위로 덮어씌우기 위한 방법 */
+    margin-top : 60px; /* header가 현재 height가 60px이어서 그만큼을 마진으로 띄워주기 위함 -> 바로 밑의 컨텐츠에서 인식이 되도록 */
+}
+
+
+.title-container {
+    /* 현재 section 에서 띄워서 입힐려고 */
+    padding-top: 100px;
+    padding-bottom :100px;
+}
+
+.title {
+    font-size:2rem;
+    font-weight:bold;
+    color:#fff;
+    padding-bottom:0.8rem; /* 밑의 글과 간격 띄우기 */
+}
+
+.message {
+    font-size:1.4rem;
+    font-weight:normal;
+    color:#fff;
+    padding-bottom:0.8rem; 
+    line-height:2rem; /* 글자간 간격 */
+}
+
+.skill-container {
+    width:100%;
+    height:100%;
+    display:flex; /* 수평 */
+    justify-content: space-around; /* 균등한 간격 */
+    align-items: center;
+    padding : 1rem 0;
+}
+
+.skill {
+    width:25%;  /* 4개 넣을 거라서 */
+    background-color:#fff;
+    display:flex;
+    align-items: center; /* flex에서 중앙 정렬 */
+    border-radius: 9px; /* 둥근 모서리 */
+    padding:0.5rem 1rem;
+    margin:0 1rem;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2); /* 그림자 */
+    transition: 0.5s; /* 강조효과가 변경되는 시간 */
+}
+
+.skill:hover {
+    transform : translate(0,-5px) /* 위로 살짝 뜨게 하는 강조효과 */
+}
+
+/* 아이콘 크기 조정 */
+.skill-icon {
+    font-size:2.5rem;
+    margin : 0 10px;
+}
+
+.skill-title {
+    margin: 0 1rem;
+    display:flex;
+    flex-direction:column; /* 수직 정렬 */
+    align-content : center;
+}
+
+.skill-name {
+    font-weight: bold;
+    color:#545e6f;
+    margin-bottom:0.2rem;
+}
+
+.skill-usage {
+    font-size: 0.9rem;
+    color:#545e6f;
+}
+
+.python-style {
+    color: #2186c4;
+}
+
+.chart-style {
+    color: #ff8066;
+}
+
+.auto-style {
+    color: #f7df1e;
+}
+
+.robot-style {
+    color: #2e7d32;
+}
+
+
+.roadmap-container {
+    width:100%;
+    margin-top:2rem;
+}
+
+.roadmap-title-container {
+    width:100%;
+    display:flex;
+    justify-content: space-between; /* 양쪽 끝에 위치하게 하기 */
+    align-items: center;
+}
+
+.roadmap-title {
+    font-size : 1.3rem;
+    font-weight:bold;
+    color:#545e5f;
+}
+
+.slide-prev {
+    font-size: 2rem;
+    cursor:pointer;
+    color:rgb(47,48,89);
+    margin-right:0.2rem;
+}
+
+.slide-next {
+    font-size: 2rem;
+    cursor:pointer;
+    color:#cfd8dc;
+}
+
+.slide-prev-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(-2px);
+}
+
+.slide-next-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(2px);
+}
+
+.arrow-container {
+    display: flex;
+}
+
+.class-list {
+    display:flex;
+    list-style:none; /* 앞의 기호 없애기 */
+    /* padding과 margin 0으로 만들기. 리스트는 디폴트로 마진과 패딩이 어느정도 있음. */
+    padding:1rem 0; /* 그림자 보여주기 위해서 위아래의 패딩 주기 */
+    margin:0;
+    overflow: none; /* overflow를 hidden으로 설정하면, transform 시 이미지가 짤림 */
+}
+
+
+.class-card {
+    max-width:240px; /* 웹페이지 크기에 따라 늘어나고 줄어나면 안 이쁨. 그래서 아예 픽셀로 고정 */
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2); /* 그림자 */
+    border-radius:8px; /* 듕글게 */
+    margin :0 10px;
+    transition:0.4s;
+    flex-shrink:0; /* inter explorer 에서의 호환 위해서 */
+}
+
+.class-card:hover {
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2); /* 그림자 조금 변경 */
+    transform: translate(0,-5px);
+}
+
+.class-image {
+    width:240px;
+    border-radius: 8px 8px 0 0; /* 시계방향 - 왼쪽위쪽 -> 오른쪽위쪽 -> .. */
+    height:150px;
+}
+
+
+.class-container {
+    width:100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.class-skill {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-type {
+    font-size:0.9rem;
+    color:#949393;
+}
+
+.class-format {
+    font-size:0.9rem;
+    color:#fff;
+    background-color: #0d47a1;
+    padding:0.2rem
+}
+
+
+.class-desc {
+    width:100%;
+    margin-top:1rem;
+}
+
+.class-title {
+    font-weight:bold;
+    color:#545e5f;
+    
+    /* 텍스트가 많으면 말줄임표로 줄임기 ... */
+    width:100%;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5rem;
+}
+
+
+.class-detail {
+    font-size:0.9rem;
+    color:#545e5f;
+    line-height: 1.5rem;   /* 줄간격 */
+}
+
+.roadmap-desc {
+    display: visual;
+}
+
+/* 리스트 안의 a 태그에 위로 올리면 클릭모양 나오게 */
+li a:hover {
+    cursor : pointer;  
+}
+
+footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding:1rem 0;
+    margin:1rem 0;
+}
+
+.footer-message {
+    font-size : 0.9rem;
+    font-weight:bold;
+    color:#545e5f;
+    margin-bottom: 0.3rem;
+}
+
+.footer-contact {
+    font-size : 0.9rem;
+    font-weight:bold;
+    color:#545e5f;
+    margin-bottom: 0.8rem;
+}
+
+.footer-copyright {
+    font-size : 0.7rem;
+    font-weight:bold;
+    color:#545e5f;
+    margin-bottom: 0.5rem;
+}
+
+
+#backtotop {
+    background-color:rgb(47,48,89);
+    width : 40px;
+    height: 40px;
+    text-align : center;
+
+    border-radius: 20px; /* width와 height의 중간값으로 설정하면 원이 됨. */
+    position:fixed;
+    bottom : 30px;
+    right : 30px;
+    transition-property : background-color, opacity, visibility;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity:0;
+    visibility:hidden; /* 처음에 안보이게 설정. */
+    z-index:999;
+}
+
+/* 아이콘 적용 방법
+    1. ::after (요소 뒤에 content 추가) 가상 요소에서,
+    2. content : "폰트어썸 유니코드" 를 넣고,
+    3. font-family : FontAwesome 이라고 넣으면 됨.
+*/
+#backtotop:after {
+    content:"\f077";
+    font-family: FontAwesome;
+    font-size : 1.5rem;
+    line-height: 40px;
+    color : #fff;
+}
+
+#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+    background-color : rgb(47,48,89);
+}
+
+#backtotop.show:hover {
+    cursor: pointer;
+    background-color:#333;
+}
+
+
+/* 가로 사이즈가 1200보다 커질 떄 */
+@media only screen and (min-width:1200px){
+    .inner {
+        /* 1200px 보다 더 안커지도록 설정 -> 가운데 것들이 더 이상 커지지 않음. */
+        max-width : 1200px;
+    }
+}
+
+/* 가로 사이즈가 980보다 작아질 떄 */
+@media only screen and (max-width:980px){
+    .skill-container {
+        display:none; /* 안보이게 하기. important 하면 우선순위 높여서 하는 것 */
+       /* display:none !important; */
+    }
+    .roadmap-desc {
+        display: none; /* 특정 문구 안보이게 하기.  */
+    }
+    
+}
+
