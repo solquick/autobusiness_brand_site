@@ -93,7 +93,7 @@ header {
 
 .main {
     height : 450px;
-    background-image: url('/img/main2.jpg');
+    background-image: url('../img/main2.jpg');
     background-size: cover; /* 반복 안되고 적절하게 표시됨 */
     background-position: center 10%; /* 이미지를 살짝 위로 올림 */
     background-repeat: no-repeat; /* 반복 X */
