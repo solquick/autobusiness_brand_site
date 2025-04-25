@@ -55,6 +55,7 @@ header {
     top:0;
     left:0;
     z-index:1000; /* 최상단에 띄우기 위해서 */
+    
 }
 
 .head-container {
@@ -65,7 +66,7 @@ header {
     align-items: center; /* 높이의 가운데정렬 */
 }
 
-.head-container .head-brand{
+.head-container .head-brand a{
     font-weight: bold;
     font-size : 1.2rem;
 }
@@ -77,7 +78,7 @@ header {
 }
 
 
-.head-container .head-blog{
+.head-container .head-blog a{
     font-weight: bold;
     font-size : 1.2rem;
 }
@@ -89,6 +90,8 @@ header {
 }
 
 
+
+
 /* section의 디폴트 설정 해주기 */
 section {
     width:100%;
@@ -97,8 +100,8 @@ section {
 }
 
 .main {
-    height : 360px;
-    background-image: url('../img/main_img.jpg');
+    height : 450px;
+    background-image: url('../img/main2.jpg');
     background-size: cover; /* 반복 안되고 적절하게 표시됨 */
     background-position: center 10%; /* 이미지를 살짝 위로 올림 */
     background-repeat: no-repeat; /* 반복 X */
@@ -108,8 +111,8 @@ section {
 .main-container {
     width:100%;
     height:100%;
-    background-color: rgb(47,48,89);
-    opacity: 0.8; /* 투명도 */
+    background-color: rgb(12, 12, 13);
+    opacity: 0.6; /* 투명도 */
     z-index: 2; /* 위로 덮어씌우기 위한 방법 */
     margin-top : 60px; /* header가 현재 height가 60px이어서 그만큼을 마진으로 띄워주기 위함 -> 바로 밑의 컨텐츠에서 인식이 되도록 */
 }
@@ -124,15 +127,16 @@ section {
 .title {
     font-size:2rem;
     font-weight:bold;
-    color:#fff;
-    padding-bottom:0.8rem; /* 밑의 글과 간격 띄우기 */
+    color:#ffffff;
+    padding-top : 2rem;
+    padding-bottom:2rem; /* 밑의 글과 간격 띄우기 */
 }
 
 .message {
     font-size:1.4rem;
     font-weight:normal;
-    color:#fff;
-    padding-bottom:0.8rem; 
+    color:#ffffff;
+    padding-bottom:1rem; 
     line-height:2rem; /* 글자간 간격 */
 }
 
@@ -142,7 +146,7 @@ section {
     display:flex; /* 수평 */
     justify-content: space-around; /* 균등한 간격 */
     align-items: center;
-    padding : 1rem 0;
+    padding : 1.5rem 0;
 }
 
 .skill {
@@ -198,7 +202,11 @@ section {
 }
 
 .robot-style {
-    color: #2e7d32;
+    color: #df2020;
+}
+
+.static-style {
+    color: #13ce61;
 }
 
 

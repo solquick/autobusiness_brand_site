@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    /* 상하 0, 좌우를 중간에 배치 -> 이는 특정 이상 크기가 되면 모든 요소를 깔끔하게 가운데로 몰기 위해서임. */
+    margin:0 auto;
+    color:#3f464d;
+
+    /* 폰트 사이트에서 쓰라고 한 대로 쓰기 */
+    font-family: "Spoqa Han Sans Neo", "Sans-serif"
+}
+
+a {
+    all: unset;
+}
+
+/* a 태그에 링크가 있을 떄 -> 디폴트값으로 일단 지정해둠. 필요한 것은 그것만 바꿈 */
+a:link {
+    text-decoration: none;
+    color : #3f464d;
+}
+
+a:visited {
+    text-decoration: none;
+    color : #3f464d;
+}
+
+a:active {
+    text-decoration: none;
+    color : #3f464d;
+}
+
+a:hover {
+    text-decoration: none;
+    color : #3f464d;
+}
+
+ /* inner의 것들을 일괄적으로 설정해주는 것임. */
+.inner {
+    width : 100%;
+    height : 100%;
+    margin : 0 auto;
+    padding: 0 2rem; /* 패딩 줘서 간격 좀 벽에서 띄우기 */
+    overflow : hidden;   /* 내용이 넘치면 숨기기 */
+}
+
+header {
+    width:100%;
+    height: 60px;
+    background-color: #ffffff;
+    position : fixed; /* 위치 고정 */
+    top:0;
+    left:0;
+    z-index:1000; /* 최상단에 띄우기 위해서 */
+}
+
+.head-container {
+    width:100%;
+    height:100%;
+    display : flex; /* 수평 */
+    justify-content: space-between; /* 양쪾끝에 정렬 */
+    align-items: center; /* 높이의 가운데정렬 */
+}
+
+.head-container .head-brand{
+    font-weight: bold;
+    font-size : 1.2rem;
+}
+
+/* 특정 부분의 a 태그 올려놓으면 */
+.head-container .head-brand a:hover{
+    color: #2186c4;
+    cursor : pointer;
+}
+
+
+.head-container .head-blog{
+    font-weight: bold;
+    font-size : 1.2rem;
+}
+
+/* 특정 부분의 a 태그 올려놓으면 */
+.head-container .head-blog a:hover{
+    color: #2186c4;
+    cursor : pointer;
+}
+
+
+
+
+.main-image {
+    height : 450px;
+    background-image: url('../img/nara.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 60%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+.main-container {
+    width:100%;
+    height:100%;
+    background-color: rgba(35, 35, 38, 0.8);
+    /* background-color: rgb(51, 51, 55);
+    opacity: 0.7; 투명도 */
+    z-index: 2; /* 위로 덮어씌우기 위한 방법 */
+    margin-top : 60px; /* header가 현재 height가 60px이어서 그만큼을 마진으로 띄워주기 위함 -> 바로 밑의 컨텐츠에서 인식이 되도록 */
+}
+
+
+.title-container {
+    /* 현재 section 에서 띄워서 입힐려고 */
+    padding-top: 100px;
+    padding-bottom :100px;
+    z-index: 20;
+}
+
+.title {
+    font-size:3rem;
+    font-weight:bold;
+    color:#ffffff;
+    padding-top : 2rem;
+    text-align: center;
+    padding-bottom:2rem; /* 밑의 글과 간격 띄우기 */
+}
+
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* max-width: 800px; */
+    width : 80%;
+    margin: auto;
+    margin-top : 80px;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.photo {
+    flex: 1;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 300px;
+    min-width: 200px;
+}
+
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 가득 채우되 넘치면 자름 */
+    display: block;
+  }
+
+
+
+.text {
+    flex: 2;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.text h2 {
+    margin-top : 10px;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #333;
+    font-size: 1.1rem;
+
+}
+
+
+
+
+/* 가로 사이즈가 1200보다 커질 떄 */
+@media only screen and (min-width:1200px){
+    .inner {
+        /* 1200px 보다 더 안커지도록 설정 -> 가운데 것들이 더 이상 커지지 않음. */
+        max-width : 1200px;
+    }
+}
+
+/* 가로 사이즈가 980보다 작아질 떄 */
+@media only screen and (max-width:980px){
+    .skill-container {
+        display:none; /* 안보이게 하기. important 하면 우선순위 높여서 하는 것 */
+       /* display:none !important; */
+    }
+    .roadmap-desc {
+        display: none; /* 특정 문구 안보이게 하기.  */
+    }
+    
+}
