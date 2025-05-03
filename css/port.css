@@ -99,6 +99,53 @@ header {
     z-index: 1;
 }
 
+.main-image-2 {
+    height : 450px;
+    background-image: url('../img/crawl2/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 60%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+.main-image-3 {
+    height : 450px;
+    background-image: url('../img/crawl3/navermap.avif');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 60%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+
+.main-image-4 {
+    height : 450px;
+    background-image: url('../img/crawl4/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 60%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+.main-image-5 {
+    height : 450px;
+    background-image: url('../img/crawl5/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 60%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+
+.main-image-6 {
+    height : 450px;
+    background-image: url('../img/crawl6/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 60%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
 .main-container {
     width:100%;
     height:100%;
@@ -135,7 +182,7 @@ header {
     /* max-width: 800px; */
     width : 80%;
     margin: auto;
-    margin-top : 80px;
+    margin-top : 40px;
 }
 
 .card {
@@ -167,7 +214,7 @@ header {
     font-weight: bold;
     font-size: 1.5rem;
     height: 300px;
-    min-width: 200px;
+    width: 400px;
 }
 
 
@@ -184,22 +231,72 @@ header {
     flex: 2;
     padding: 20px;
     line-height: 1.5;
+    color: #535151;
 }
 
 .text h2 {
     margin-top : 10px;
     margin-bottom: 30px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    
 }
 
 .text p {
     font-size: 1rem;
-    color: #333;
     font-size: 1.1rem;
 
 }
 
 
+.port-bottom-margin {
+    margin-bottom : 4rem;
+}
+
+.main-message {
+    margin-bottom: 1rem;
+}
+
+.main-message h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+
+.hr-main {
+    border: none; border-top: 1px solid #ccc; margin: 20px 0;
+    margin-top : 2rem;
+  }
+
+  .main-contents {
+    font-size : 1.1rem;
+  }
+
+
+
+
+
+
+  .info-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid #4A90E2;
+    padding: 16px 20px;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    color: #635f5f;
+  }
+  
+  .info-title {
+    font-size: 1.45rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top : 1.1rem
+  }
+  
+  .info-description {
+    font-size: 1.1rem;
+    color: #635f5f;
+    line-height: 1.5;
+  }
 
 
 /* 가로 사이즈가 1200보다 커질 떄 */

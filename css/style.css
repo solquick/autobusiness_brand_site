@@ -147,6 +147,7 @@ section {
     justify-content: space-around; /* 균등한 간격 */
     align-items: center;
     padding : 1.5rem 0;
+    
 }
 
 .skill {
@@ -159,10 +160,12 @@ section {
     margin:0 1rem;
     box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2); /* 그림자 */
     transition: 0.5s; /* 강조효과가 변경되는 시간 */
+    
 }
 
 .skill:hover {
     transform : translate(0,-5px) /* 위로 살짝 뜨게 하는 강조효과 */
+    
 }
 
 /* 아이콘 크기 조정 */
@@ -176,6 +179,7 @@ section {
     display:flex;
     flex-direction:column; /* 수직 정렬 */
     align-content : center;
+    cursor:pointer;
 }
 
 .skill-name {
@@ -354,21 +358,28 @@ footer {
     font-size : 0.9rem;
     font-weight:bold;
     color:#545e5f;
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
 }
 
 .footer-contact {
-    font-size : 0.9rem;
-    font-weight:bold;
-    color:#545e5f;
-    margin-bottom: 0.8rem;
-}
-
-.footer-copyright {
     font-size : 0.7rem;
     font-weight:bold;
     color:#545e5f;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.footer-info {
+    font-size : 0.7rem;
+    font-weight:bold;
+    color:#545e5f;
+    margin-bottom: 0.2rem;
+}
+
+
+.footer-title {
+    margin-right : 0.4rem;
+    font-weight:bold;
+    
 }
 
 

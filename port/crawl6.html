@@ -40,7 +40,8 @@
         <!-- 웹 폰트 사용 => 각 폰트를 다루는 사이트에서 웹 사이트 폰트 링크 가져오면 됨. -->
         <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
         <!-- css 파일 가져오기 -->
-        <link rel="stylesheet" href="../css/port1.css" />
+        <link rel="stylesheet" href="../css/port.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
     
     </head>
 
@@ -51,72 +52,86 @@
         <div class="inner">
             <div class="head-container">
                 <div class="head-brand"><a href="../index.html">오토비지니스</a></div>
-                <div class="head-blog"><a href="../contact.html">CONTACT</a></div>
+                <div class="head-blog"><a href="../contact.html">상담하기</a></div>
             </div>
         </div>
     </header>
 
     <!-- 메인 이미지 섹션 -->
 
-    <section class="main-image">
+    <section class="main-image-6">
         <div class="main-container">
             <div class="inner">
                 <div class="title-container">
-                    <div class="title">나라장터 크롤링 프로그램</div>
+                    <div class="title">인스타그램 키워드 추출 프로그램</div>
                 </div>
             </div>
         </div>
     </section>
 
 
+
     <div class="container">
-    <!-- 타입 1: 사진 왼쪽, 텍스트 오른쪽 -->
-    <div class="card row">
-      <div class="photo">
-        <img src="../img/nara_crawling.jpg" alt="데이터사진">
-      </div>
-      <div class="text">
-        <h2>나라장터 크롤링 프로그램 메인화면</h2>
-        <p>
-          나라장터 크롤링 프로그램의 메인 화면입니다.<br>
-          입찰공고조사 버튼을 누르면, 입찰공고의 데이터 추출이 시작되고,<br>
-          발주계획조사 버튼을 누르면, 발주공고의 데이터 추출이 시작됩니다.<br>
-          저장 버튼을 누르면, 추출된 데이터가 엑셀파일로 저장됩니다.<br>
+
+      <div class="info-box">
+        <h2 class="info-title">프로그램 간단설명</h2>
+        <p class="info-description">
+          인스타그램에서 관련 키워드를 추출하는 프로그램입니다. <br>
+          원하는 키워드로 검색해서 조회되는 게시글들의 태그들을 수집하고, 저장합니다. <br>
+          이를 이용해서 사람들이 어떤 태그를 이용해서 글을 쓰는지 파악할 수 있습니다. <br>
         </p>
       </div>
-    </div>
+
 
     <!-- 타입 2: 텍스트 왼쪽, 사진 오른쪽 -->
     <div class="card row reverse">
       <div class="text">
-        <h2>키워드 메모장에 입력</h2>
+        <h2>검색어 입력 및 추출 시작</h2>
         <p>
-          키워드는 메모장에 입력합니다. <br>
-          하나의 키워드씩 입력하고, 각 키워드는 엔터로 구분합니다.<br>
-          메인프로그램이 있는 폴더와 같은 폴더에 keyword.txt 라는 이름으로 저장해줍니다.  <br>     
+          자동완성 검색어를 조회하고 싶은 키워드를 적습니다. <br>
+          추출 시작 버튼을 누르면 추출이 시작됩니다.<br>
         </p>
       </div>
       <div class="photo">
-        <img src="../img/textfile.jpg" alt="메모장사진">
+        <img src="../img/crawl5/main1.png" alt="엑셀입력사진">
       </div>
     </div>
+
+
+      <!-- 타입 1: 사진 왼쪽, 텍스트 오른쪽 -->
+    <div class="card row">
+      <div class="photo">
+        <img src="../img/crawl5/main.png" alt="메인화면">
+      </div>
+      <div class="text">
+        <h2>추출완료 및 저장</h2>
+        <p>
+          추출이 완료되면, 프로그램 창에 자동완성 검색어들이 업로드됩니다.<br>
+          검색어들을 따로 저장하고 싶다면, 저장 버튼을 누릅니다.<br>
+          메모장파일(키워드_자동완성검색어.txt) 로 저장됩니다. <br>
+        </p>
+      </div>
+    </div>
+
+
 
 
       <!-- 타입 1: -->
       <div class="card row reverse">
         <div class="text">
-          <h2>엑셀파일에 저장된 결과물</h2>
+          <h2>txt 파일에 저장된 결과물</h2>
           <p>
-            저장 버튼을 누르시면, 추출된 데이터가 엑셀파일로 저장됩니다. <br>
-            결과물 엑셀파일은 메인프로그램이 있는 폴더와 같은 위치에 생성됩니다.<br>
-            정돈된 결과물을 한 눈에 볼 수 있고, 추후에 원하신다면 데이터를 이용한 분석도 가능합니다.<br>     
+            추출이 끝나면, 키워드의 모든 자동완성검색어들이 txt 파일에 자동으로 저장됩니다. <br>
+            추출되는 정보는 'ㄱ ~ ㅎ'이 뒤에 붙은 상태에서의 자동완성 검색어들입니다. <br>
+            예) '망고 + ㄱ', '망고 + ㄴ', ... <br>    
           </p>
         </div>
         <div class="photo">
-          <img src="../img/result_nara.jpg" alt="엑셀추출결과사진">
+          <img src="../img/crawl5/output.png" alt="엑셀추출결과사진">
         </div>
       </div>
 
+      <div class="port-bottom-margin"></div>
 
     <!-- 타입 3: 사진 위, 텍스트 아래 -->
     <!-- <div class="card column">
@@ -128,8 +143,22 @@
         <p>본문</p>
       </div>
     </div> -->
-
-
   </div>
+
+
+
+  <footer>
+    <div class="inner">
+        <div class="footer-message">여러분의 업무에 자동화의 날개를 달아드리겠습니다.</div>
+        <div class="footer-info"><span class="footer-title">상호명</span>오토비지니스</div>
+        <div class="footer-info"><span class="footer-title">대표자</span>김현수</div>
+        <div class="footer-info"><span class="footer-title">사업자등록번호</span>170-27-01585</div>
+        <div class="footer-contact"><span class="footer-title">문의메일</span>devel9861@gmail.com</div>
+        <div class="footer-contact"><span class="footer-title">문의연락처</span>010-5123-9861</div>
+
+    </div>
+</footer>
+
+
 </body>
 </html>

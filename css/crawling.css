@@ -1,0 +1,85 @@
+
+.category-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.category-page h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.category-page p, .category-page ul {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  color: #11912f
+}
+
+.category-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-page li {
+  margin-bottom: 8px;
+}
+
+.head-main {
+  margin-top:60px;
+  background-color: #051706;
+  color: white;
+  text-align: center;
+  font-size : 3rem;
+  height : 450px;
+  background-image: url('../img/hacking.png');
+  background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+  background-position: center 60%; /* 이미지를 살짝 위로 올림 */
+  background-repeat: no-repeat; /* 반복 X */
+  z-index: 1;
+  
+}
+
+.head-title {
+  background-color: rgba(35, 35, 38, 0.8);
+  height : 100%;
+  padding-top : 100px;
+
+}
+
+
+
+.category-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .card {
+    flex: 1 1 300px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .intro {
+    margin-bottom: 60px;
+  }

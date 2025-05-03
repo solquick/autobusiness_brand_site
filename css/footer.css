@@ -1,0 +1,34 @@
+footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding:1rem 0;
+    margin:1rem 0;
+}
+
+.footer-message {
+    font-size : 0.9rem;
+    font-weight:bold;
+    color:#545e5f;
+    margin-bottom: 1rem;
+}
+
+.footer-contact {
+    font-size : 0.7rem;
+    font-weight:bold;
+    color:#545e5f;
+    margin-bottom: 0.2rem;
+}
+
+.footer-info {
+    font-size : 0.7rem;
+    font-weight:bold;
+    color:#545e5f;
+    margin-bottom: 0.2rem;
+}
+
+
+.footer-title {
+    margin-right : 0.4rem;
+    font-weight:bold;
+    
+}
