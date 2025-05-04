@@ -14,7 +14,7 @@
   font-size: 1.1rem;
   line-height: 1.8;
   color: #555;
-  color: #11912f
+  color: #2c2e2d
 }
 
 .category-page ul {
@@ -28,7 +28,7 @@
 
 .head-main {
   margin-top:60px;
-  background-color: #051706;
+  background-color: #272927;
   color: white;
   text-align: center;
   font-size : 3rem;
@@ -38,8 +38,22 @@
   background-position: center 60%; /* 이미지를 살짝 위로 올림 */
   background-repeat: no-repeat; /* 반복 X */
   z-index: 1;
-  
 }
+
+.head-main-2 {
+  margin-top:60px;
+  background-color: #272927;
+  color: white;
+  text-align: center;
+  font-size : 3rem;
+  height : 450px;
+  background-image: url('../img/contents/auto.png');
+  background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+  background-position: center 60%; /* 이미지를 살짝 위로 올림 */
+  background-repeat: no-repeat; /* 반복 X */
+  z-index: 1;
+}
+
 
 .head-title {
   background-color: rgba(35, 35, 38, 0.8);
@@ -83,3 +97,14 @@
   .intro {
     margin-bottom: 60px;
   }
+
+
+main section {
+  margin-bottom: 60px;
+}
+
+
+.photo img{
+  height: 300px;
+  width: 400px;
+}
