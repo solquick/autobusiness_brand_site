@@ -110,6 +110,7 @@ header {
 }
 
 
+
 .title-container {
     /* 현재 section 에서 띄워서 입힐려고 */
     padding-top: 100px;
@@ -135,6 +136,7 @@ header {
 
 .contact-page {
     
+    margin-top : 60px;
     background-color: #fdfdfd;
     min-height: 100vh;
   }

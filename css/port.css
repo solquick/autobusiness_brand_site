@@ -146,10 +146,67 @@ header {
     z-index: 1;
 }
 
+
+.main-image-7 {
+    height : 450px;
+    background-image: url('../img/crawl7/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 10%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+.main-image-2-1 {
+    height : 450px;
+    background-image: url('../img/auto1/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 50%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+
+.main-image-2-2 {
+    height : 450px;
+    background-image: url('../img/auto2/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 30%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+.main-image-2-3 {
+    height : 450px;
+    background-image: url('../img/auto3/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 50%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+.main-image-2-4 {
+    height : 450px;
+    background-image: url('../img/auto4/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 50%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+.main-image-2-5 {
+    height : 450px;
+    background-image: url('../img/auto5/homepage.png');
+    background-size: cover; /* 반복 안되고 적절하게 표시됨 */
+    background-position: center 50%; /* 이미지를 살짝 위로 올림 */
+    background-repeat: no-repeat; /* 반복 X */
+    z-index: 1;
+}
+
+
 .main-container {
     width:100%;
     height:100%;
-    background-color: rgba(35, 35, 38, 0.8);
+    background-color: rgba(35, 35, 38, 0.6);
     /* background-color: rgb(51, 51, 55);
     opacity: 0.7; 투명도 */
     z-index: 2; /* 위로 덮어씌우기 위한 방법 */
@@ -165,7 +222,7 @@ header {
 }
 
 .title {
-    font-size:3rem;
+    font-size:3.5rem;
     font-weight:bold;
     color:#ffffff;
     padding-top : 2rem;
