@@ -236,23 +236,24 @@ section {
     font-size: 2rem;
     cursor:pointer;
     color:rgb(47,48,89);
-    margin-right:0.2rem;
+    
 }
 
 .slide-next {
     font-size: 2rem;
     cursor:pointer;
     color:#cfd8dc;
+    margin-right:0.2rem;
 }
 
 .slide-prev-hover:hover {
     transition: transform 0.5s;
-    transform: translateX(-2px);
+    transform: translateX(2px);
 }
 
 .slide-next-hover:hover {
     transition: transform 0.5s;
-    transform: translateX(2px);
+    transform: translateX(-2px);
 }
 
 .arrow-container {
